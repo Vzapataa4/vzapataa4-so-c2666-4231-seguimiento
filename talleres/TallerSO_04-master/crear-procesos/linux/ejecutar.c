@@ -15,7 +15,7 @@ main(int argc, char const* argv[], char *env[]) {
       "ejecutar.c",
       NULL };
       
-    execve("/usr/bin/nano", proceso_argv, env);
+    execve("/opt/homebrew/bin/nano", proceso_argv, env);
 
     _exit(1);
   }
@@ -23,11 +23,11 @@ main(int argc, char const* argv[], char *env[]) {
     int status;
     waitpid(proceso_hijo, &status, 0);
     fprintf(stdout, "pid: %d proceso hijo: %d\n",
-	    getpid(),
-	    proceso_hijo);
+    getpid(),
+    proceso_hijo);
     fprintf(stdout, "llamo a _exit=%d status=%d\n",
-	    WIFEXITED(status),
-	    WEXITSTATUS(status));
+    WIFEXITED(status),
+    WEXITSTATUS(status));
   }
 
   _exit(0);

@@ -9,7 +9,7 @@ main(int argc, char const* argv[], char *env[]) {
   
   if (proceso_hijo == 0) {
       
-    execl("/usr/bin/nano", "nano", "-l", "-v", "crear_proceso.c", "ejecutar.c", NULL);
+    execl("/opt/homebrew/bin/nano", "nano", "-l", "-v", "crear_proceso.c", "ejecutar.c", NULL);
 
     _exit(1);
   }

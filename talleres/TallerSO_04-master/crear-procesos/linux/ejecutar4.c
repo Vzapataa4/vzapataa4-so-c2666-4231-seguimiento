@@ -15,7 +15,7 @@ main(int argc, char const* argv[], char *env[]) {
       "ejecutar.c",
       NULL };
       
-    execv("/usr/bin/nano", proceso_argv);
+    execv("/opt/homebrew/bin/nano", proceso_argv);
 
     _exit(1);
   }
