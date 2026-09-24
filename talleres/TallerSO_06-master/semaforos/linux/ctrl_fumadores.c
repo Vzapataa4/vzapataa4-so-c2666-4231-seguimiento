@@ -10,7 +10,6 @@ void manejador(int signo);
 void usage(char const *progname, int codigo_salida);
 int random_siguiente(int max, int min);
 
-enum SEM_ID { CERILLA, PAPEL, TABACO, AGENTE };
 
 pid_t procesos[AGENTE+1];
 
